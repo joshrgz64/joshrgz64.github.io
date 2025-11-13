@@ -104,6 +104,9 @@ nav ul {
 .frameMain img {
     width: 48vw;
 }
+#manoRobot {
+    width: 24vh
+}
 
 nav {
     background-color: var(--bg-color);
