@@ -134,6 +134,7 @@ nav ul li a {
     display: flex;
     background-color: #445979;
     text-decoration: none;
+    color: var(--not-white);
 }
 
 nav ul li a:hover {
