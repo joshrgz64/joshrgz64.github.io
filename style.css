@@ -11,7 +11,11 @@
 }
 
 html {
-    font-family: "Lato";
+    font-family: "Chocolate Classical Sans", sans-serif;
+}
+
+h1 {
+    font-family: "Stack Sans Text",sans-serif;
 }
 
 .pantalla {
@@ -32,8 +36,9 @@ html {
 }
 
 .pantalla h1 {
-    font-size: 8vw;
+    font-size: 7vw;
     padding-bottom: 15px;
+    font-family: "Stack Sans Notch", sans-serif;
 }
 
 .pantalla h3 {
@@ -43,14 +48,65 @@ html {
 }
 
 .pantalla h4 {
-    font-weight: lighter;
+    font-weight: 100;
     font-size: 2vw;
 }
 
 main {
     margin: 10px;
     padding: 1px 10px;
-    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.frameMain {
+    width: 70%;
+    color: var(--bg-color);
+}
+
+.frameMain h1 {
+    font-size: 4vh;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.frameMain span, nav ul {
+    font-size: 1.8vh;
+}
+
+nav {
+    background-color: var(--bg-color);
+    color: var(--not-white);
+    width: 250px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+nav ul li a:visited {
+    color: white;
+}
+
+
+.menuTitulo {
+    display: block;
+    text-align: center;
+    font-size: 4vh;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: var(--accent);
+    font-family: "Stack Sans Text",sans-serif;
+}
+
+.sangria {
+    margin: 10px 5px !important;
+    padding: 15px !important;
 }
 
 @media screen and (max-width: 799px) {
