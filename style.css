@@ -15,7 +15,7 @@ html {
 }
 
 h1 {
-    font-family: "Stack Sans Text",sans-serif;
+    font-family: "Stack Sans Text", sans-serif;
 }
 
 .pantalla {
@@ -52,6 +52,25 @@ h1 {
     font-size: 2vw;
 }
 
+.pantalla h1,
+.pantalla h3,
+.pantalla h4 {
+    user-select: none;
+}
+
+.pantallaHeaderSmall {
+    background-color: var(--bg-color);
+    color: var(--not-white);
+    border-bottom: 30px solid var(--accent);
+    padding: 20px;
+    text-align: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 main {
     margin: 10px;
     padding: 1px 10px;
@@ -66,23 +85,55 @@ main {
     color: var(--bg-color);
 }
 
+.frameMain {
+    text-align: justify;
+}
+
 .frameMain h1 {
     font-size: 4vh;
     text-transform: uppercase;
     font-weight: bolder;
+    text-align: left;
 }
-.frameMain span, nav ul {
+
+.frameMain span,
+nav ul {
     font-size: 1.8vh;
+}
+
+.frameMain img {
+    width: 48vw;
 }
 
 nav {
     background-color: var(--bg-color);
     color: var(--not-white);
     width: 250px;
+    position: sticky;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 nav ul {
     list-style: none;
+    margin-top: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding-top: 10px;
+}
+
+nav ul li {
+    margin-bottom: 5px;
+}
+
+
+nav ul li a {
+    padding: 10px;
+    display: flex;
+    background-color: #445979;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -90,9 +141,17 @@ nav ul li a:hover {
 }
 
 nav ul li a:visited {
-    color: white;
+    color: unset;
 }
 
+.disabled {
+    background-color: #697483;
+}
+
+.disabled:hover {
+    font-weight: normal;
+    user-select: none;
+}
 
 .menuTitulo {
     display: block;
@@ -101,7 +160,14 @@ nav ul li a:visited {
     text-transform: uppercase;
     font-weight: bolder;
     color: var(--accent);
-    font-family: "Stack Sans Text",sans-serif;
+    font-family: "Stack Sans Text", sans-serif;
+}
+
+.tablaDosCol {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 10px;
+    gap: 50px;
 }
 
 .sangria {
@@ -109,7 +175,47 @@ nav ul li a:visited {
     padding: 15px !important;
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 900px) {
+    main {
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .frameMain {
+        order: 1;
+        width: 100%;
+    }
+
+    .frameMain img {
+        width: 100%;
+    }
+
+    nav {
+        order: 0;
+        width: 100%;
+        display: flex;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    nav ul {
+        margin-top: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        position: relative;
+        z-index: 100;
+        padding-top: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+    }
+
     .pantalla img {
         width: 13vw;
     }
@@ -129,4 +235,21 @@ nav ul li a:visited {
         font-size: 5vw;
     }
 
+    .pantallaHeaderSmall {
+        height: 450px;
+    }
+
+    .frameMain h1 {
+        font-size: 2vh;
+    }
+
+    .menuTitulo {
+        display: none;
+
+    }
+
+    .tablaDosCol {
+        grid-template-columns: auto;
+        gap: 20px;
+    }
 }
