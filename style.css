@@ -70,6 +70,7 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
 .pantallaHeaderSmall img {
     width: 15vh;
 }
@@ -104,6 +105,14 @@ main {
     text-transform: uppercase;
     font-weight: bolder;
     text-align: left;
+}
+
+.frameMain h3 {
+    font-size: 2.4vh;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: left;
+    color: #445979;
 }
 
 .frameMain span,
@@ -205,6 +214,7 @@ nav ul li a:visited {
     .frameMain img {
         width: 100%;
     }
+
     .frameMain span {
         font-size: 2.5vh;
     }
@@ -231,7 +241,7 @@ nav ul li a:visited {
 
     nav ul li {
         margin-bottom: 0;
-        
+
     }
 
     .pantalla img {
@@ -256,6 +266,7 @@ nav ul li a:visited {
     .pantallaHeaderSmall {
         height: 250px;
     }
+
     .pantallaHeaderSmall h1 {
         font-size: 6vw;
     }
@@ -275,18 +286,23 @@ nav ul li a:visited {
     .pantalla h1 {
         font-size: 5vw;
     }
+
     .pantalla h3 {
         font-size: 3.5vw;
     }
+
     .pantalla h4 {
         font-size: 2vw;
     }
+
     .pantallaHeaderSmall {
         height: 150px;
     }
+
     .pantallaHeaderSmall h1 {
         font-size: 3vw;
     }
+
     nav ul {
         font-size: 4vh;
         grid-template-columns: auto auto auto;
@@ -296,6 +312,10 @@ nav ul li a:visited {
         font-size: 7vh;
     }
 
+    .frameMain h3 {
+        font-size: 4.5vh;
+    }
+
     .frameMain h2 {
         font-size: 5vh;
     }
@@ -303,4 +323,5 @@ nav ul li a:visited {
     .frameMain span {
         font-size: 4vh;
     }
+
 }
