@@ -70,6 +70,9 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+.pantallaHeaderSmall img {
+    width: 15vh;
+}
 
 main {
     margin: 10px;
@@ -96,6 +99,13 @@ main {
     text-align: left;
 }
 
+.frameMain h2 {
+    font-size: 3vh;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: left;
+}
+
 .frameMain span,
 nav ul {
     font-size: 1.8vh;
@@ -104,6 +114,7 @@ nav ul {
 .frameMain img {
     width: 48vw;
 }
+
 #manoRobot {
     width: 24vh
 }
@@ -188,20 +199,22 @@ nav ul li a:visited {
 
     .frameMain {
         order: 1;
-        width: 100%;
+        width: 98%;
     }
 
     .frameMain img {
         width: 100%;
     }
+    .frameMain span {
+        font-size: 2.5vh;
+    }
 
     nav {
         order: 0;
-        width: 100%;
+        width: 98%;
         display: flex;
         position: sticky;
         top: 0;
-        width: 100%;
         z-index: 100;
     }
 
@@ -218,6 +231,7 @@ nav ul li a:visited {
 
     nav ul li {
         margin-bottom: 0;
+        
     }
 
     .pantalla img {
@@ -240,11 +254,10 @@ nav ul li a:visited {
     }
 
     .pantallaHeaderSmall {
-        height: 450px;
+        height: 250px;
     }
-
-    .frameMain h1 {
-        font-size: 2vh;
+    .pantallaHeaderSmall h1 {
+        font-size: 6vw;
     }
 
     .menuTitulo {
@@ -255,5 +268,39 @@ nav ul li a:visited {
     .tablaDosCol {
         grid-template-columns: auto;
         gap: 20px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+    .pantalla h1 {
+        font-size: 5vw;
+    }
+    .pantalla h3 {
+        font-size: 3.5vw;
+    }
+    .pantalla h4 {
+        font-size: 2vw;
+    }
+    .pantallaHeaderSmall {
+        height: 150px;
+    }
+    .pantallaHeaderSmall h1 {
+        font-size: 3vw;
+    }
+    nav ul {
+        font-size: 4vh;
+        grid-template-columns: auto auto auto;
+    }
+
+    .frameMain h1 {
+        font-size: 7vh;
+    }
+
+    .frameMain h2 {
+        font-size: 5vh;
+    }
+
+    .frameMain span {
+        font-size: 4vh;
     }
 }
