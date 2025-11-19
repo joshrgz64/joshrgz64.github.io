@@ -199,11 +199,42 @@ nav ul li a:visited {
     padding: 15px !important;
 }
 
+footer {
+    background-color: var(--bg-color);
+    color: var(--not-white);
+    padding: 10px;
+    text-align: center;
+    user-select: none;
+}
+
+footer span {
+    font-size: 1.6vh;
+}
+
+hr {
+    margin: 10px auto;
+    border-color: #697483;
+    width: auto;
+}
+
+.redesSociales,
+.redesSociales span {
+    font-weight: bold;
+    font-size: 2vh;
+}
+
 @media screen and (max-width: 900px) {
     main {
         flex-direction: column;
         margin: 0;
         gap: 0;
+    }
+
+    footer span {
+        font-size: 2.4vh;
+    }
+    .redesSociales, .redesSociales span {
+        font-size: 2vh;
     }
 
     .frameMain {
@@ -283,7 +314,13 @@ nav ul li a:visited {
 }
 
 @media screen and (orientation: landscape) and (max-width: 900px) {
-    .pantalla h1 {
+    footer span {
+        font-size: 3.4vh;
+    }
+    .redesSociales, .redesSociales span {
+        font-size: 4vh;
+    }
+   .pantalla h1 {
         font-size: 5vw;
     }
 
