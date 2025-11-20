@@ -221,6 +221,11 @@ hr {
 .redesSociales span {
     font-weight: bold;
     font-size: 2vh;
+    user-select: all !important;
+}
+
+.redesSociales span a {
+    color: var(--not-white);
 }
 
 img.gridImage {
@@ -274,7 +279,7 @@ div.bibliografia ul li {
         margin-top: 0;
         width: 100%;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 48.5% 48.5%;
         gap: 10px;
         position: relative;
         z-index: 100;
@@ -358,7 +363,7 @@ div.bibliografia ul li {
 
     nav ul {
         font-size: 4vh;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 49% 49%;
     }
 
     .frameMain h1 {
