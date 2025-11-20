@@ -223,6 +223,15 @@ hr {
     font-size: 2vh;
 }
 
+img.gridImage {
+    width: 100%;
+}
+
+div.bibliografia ul li {
+    list-style: decimal inside;
+    padding-bottom: 10px;
+}
+
 @media screen and (max-width: 900px) {
     main {
         flex-direction: column;
@@ -233,7 +242,9 @@ hr {
     footer span {
         font-size: 2.4vh;
     }
-    .redesSociales, .redesSociales span {
+
+    .redesSociales,
+    .redesSociales span {
         font-size: 2vh;
     }
 
@@ -311,16 +322,21 @@ hr {
         grid-template-columns: auto;
         gap: 20px;
     }
+
+
 }
 
 @media screen and (orientation: landscape) and (max-width: 900px) {
     footer span {
         font-size: 3.4vh;
     }
-    .redesSociales, .redesSociales span {
+
+    .redesSociales,
+    .redesSociales span {
         font-size: 4vh;
     }
-   .pantalla h1 {
+
+    .pantalla h1 {
         font-size: 5vw;
     }
 
